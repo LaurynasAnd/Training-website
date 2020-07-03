@@ -3,7 +3,7 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 [![HitCount](http://hits.dwyl.com/LaurynasAnd/Training-website.svg)](http://hits.dwyl.com/Lauryna/Training-website)
 
-# Sign up page
+# Training website
 
 
 This project is for learning purposes only. Pull requests are welcome, but keep in mind that I did this during my coding training! Thank you for your interest! :)
