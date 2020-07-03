@@ -1,3 +1,4 @@
+body {background-color: aqua;}
 .container {
     background-color: yellow;
     display: inline-block;
@@ -21,9 +22,93 @@
 
 
     .container > .right {
-        background-color: red;
         display: inline-block;
         float: right;
         padding: 80px;
         width: 60%;
+        background-color: white;
     }
+
+
+        .container > .right > .close {
+            width: 80px;
+            height: 80px;            
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+        }
+
+        .container > .right > .close:hover > .cl-line {
+            background-color: #888;
+        }
+        .container > .right > .close > .cl-line {
+            display: inline-block;
+            background-color: #555;
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            top: 49%;
+            left: 25%;
+
+        }
+        .container > .right > .close > .cl-line:first-of-type {
+            transform: rotate(45deg);
+        }
+        .container > .right > .close > .cl-line:last-of-type {
+            transform: rotate(-45deg);
+            
+        }
+
+        .container > .right > .form {
+            width: 100%;
+        }
+        .container > .right > .form > .form-row {
+            margin-bottom: 30px;
+        }
+        
+        .container > .right > .form > .form-row:last-of-type {
+            margin-bottom: 0;
+        }
+        
+            .container > .right > .form > .form-row > label {
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .container > .right > .form > .form-row > input {
+            display: inline-block;
+            width: 100%;
+            padding: 2px;
+            border: none;
+            border-bottom: 2px solid #888;
+        }
+                                
+        .container > .right > .form > .form-row > input:focus {
+            outline: 1px dotted #aaa ;
+            outline-offset: 2px;
+            border: none;
+        }
+    
+        .container > .right > .form > .form-row > .button-su {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .container > .right > .form > .form-row > span {
+            line-height: 20px;
+            padding: 10px 10px 10px 20px;
+            font-size: 16px;
+        }
+        .container > .right > .form > .form-row > a {
+            line-height: 20px;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ee3976;
+        }
+                                
+        .container > .right > .form > .form-row > a:hover {
+            color: #555;
+        }
