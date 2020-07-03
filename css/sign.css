@@ -1,0 +1,29 @@
+.container {
+    background-color: yellow;
+    display: inline-block;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+    .container > .left {
+        background-color: green;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        bottom: 20px;
+        width: 40%;
+    }
+
+
+    .container > .right {
+        background-color: red;
+        display: inline-block;
+        float: right;
+        padding: 80px;
+        width: 60%;
+    }
