@@ -32,7 +32,25 @@
 @media (max-width: 480px)  {
     .container  {
         width: 100%;
+        
     }
+    .container > .right {
+        padding: 20px;
+    }
+
+
+    .container > .right > .close {
+        width: 40px;
+        height: 40px;            
+        background-color: pink;
+    }
+
+    .container > .right > .close > .cl-line {
+        width: 20px;
+        height: 2px;
+
+    }
+
 }
 
 
