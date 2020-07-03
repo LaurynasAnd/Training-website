@@ -1,6 +1,5 @@
-body {background-color: aqua;}
+body {background-color: #3792C7;}
 .container {
-    background-color: yellow;
     display: inline-block;
     position: absolute;
     width: 800px;
@@ -11,15 +10,44 @@ body {background-color: aqua;}
 
 
     .container > .left {
-        background-color: green;
+        background-color: #3792C7;
         display: inline-block;
         position: absolute;
         left: 0;
         top: 20px;
         bottom: 20px;
         width: 40%;
+        background-image: url(../img/backgroung.png);
+        background-position: 0 0;
     }
 
+    .container > .left > .s-title {
+        display: inline-block;
+        color: white;
+        width: 100%;
+        padding: 20px 30px;
+        line-height: 40px;
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .container > .left > .s-footer {
+        position: absolute;
+        left: 30px;
+        bottom: 10px;
+        right: 30px;
+        color: white;
+    }
+
+
+    .container > .left > .s-footer > a {
+        color: white;
+        text-decoration-style: dotted;
+
+    }
+
+    .container > .left > .s-footer > a:hover {
+        color: #EA1E63;
+    }
 
     .container > .right {
         display: inline-block;
