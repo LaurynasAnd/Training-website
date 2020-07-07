@@ -1,2 +1,52 @@
-SIGN IN PAGE
-<a href="./signup.html">Sign up</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up!</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        
+        <div class="left">
+            <h1 class="s-title">Sign in</h1>
+            <footer class="s-footer">
+                <a href="#" class="terms">Privacy policy</a>
+                <span>&amp;</span>
+                <a href="#" class="terms">terms of service</a>
+            </footer>
+        </div>
+
+
+        <div class="right">
+            <a class="close" href="./index.html">
+                <div class="cl-line"></div>
+                <div class="cl-line"></div>
+            </a>
+            <form action="" class="form">
+                <div class="form-row">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email"></div>
+                <div class="form-row">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password"></div>
+                <div class="form-row">
+                    <div    class="button button-su" 
+                            onclick="alert('This project is front end only')">
+                        Sign in
+                    </div>
+                    <span>or</span>
+                    <a href="./signup.html" class="link">Sign up</a>
+                </div>
+                <a href="./remind-password.html" class="forgot">Forgot password?</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
