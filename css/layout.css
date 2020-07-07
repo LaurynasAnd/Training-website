@@ -10,6 +10,9 @@
     .container > .right {
         padding: 60px;
     }
+    .container > .left > .s-footer > a:last-of-type{
+        width: 100%;
+    }
 }
 
 
@@ -34,6 +37,15 @@
         font-size: 35px;
         font-weight: normal;
     }
+        .container > .left > .s-title > span {
+            display: inline-block;
+            width: unset;
+            margin-right: 10px;
+            font-size: 30px;
+        }
+        .container > .left > .s-footer > a:last-of-type{
+            width: unset;
+        }
 
     .container > .right  {
         width: 100%;
