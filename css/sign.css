@@ -43,6 +43,10 @@ body {background-color: #3792C7;}
             font-size: 40px;
             font-weight: normal;
         }
+            .container > .left > .s-title > span {
+                display: inline-block;
+                width: 100%;
+            }
         .container > .left > .s-footer {
             position: absolute;
             left: 30px;
@@ -53,6 +57,7 @@ body {background-color: #3792C7;}
 
 
             .container > .left > .s-footer > a {
+                display: inline-block;
                 color: white;
                 text-decoration-style: dotted;
 
