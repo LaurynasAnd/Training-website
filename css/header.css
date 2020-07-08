@@ -1,0 +1,11 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    padding: 40px 0;
+}
+
+    .container > .content {
+        width: 800px;
+    }
+    .container > .content > .logo {}
+    .container > .content > link {}
