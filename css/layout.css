@@ -1,6 +1,22 @@
+.full-container {
+    display: inline-block;
+    width: 100%;
+    padding: 40px;
+}
+    .full-container > .content {
+        display: inline-block;
+        width: 1100px;
+        margin: 0 calc(50% - 550px);
+    }
+
+
 @media (max-width: 1200px)  {
     .container  {
         width: 800px;
+    }
+    .full-container > .content {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
     }
 }
 
@@ -14,6 +30,10 @@
     }
     .container > .left > .s-footer > a:last-of-type{
         width: 100%;
+    }
+    .full-container > .content {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
     }
 }
 
@@ -53,6 +73,10 @@
         width: 100%;
         z-index: 1;
     }
+    .full-container > .content {
+        width: 480px;
+        margin: 0 calc(50% - 240px);
+    }
 }
 
 
@@ -77,7 +101,17 @@
         height: 2px;
 
     }
-
+    .full-container {
+        padding: 20px 0;
+    }
+        .full-container > .content {
+            width: 100%;
+            margin: 0;
+        }
+            .full-container > .content > .logo {
+                display: inline-block;
+                width: 60px;
+            }
 }
 
 
