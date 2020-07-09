@@ -6,25 +6,75 @@
         background-color: pink;
         position: relative;
     }
-    .full-container > .content > .logo {
-        display: inline-block;
-        width: 80px;
-    }
-    .full-container > .content > .nav-tab {
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-        .full-container > .content > .nav-tab > .link {
+        .full-container > .content > .logo {
             display: inline-block;
-            line-height: 20px;
-            font-size: 18px;
-            margin-left: 20px;
-            text-decoration: none;
+            width: 80px;
         }
-        .full-container > .content > .nav-tab > .non-button {
-            color: #EA1E63;
-            
+        .full-container > .content > .nav-tab {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
-            .full-container > .content > .nav-tab > .non-button:hover {}
+            .full-container > .content > .nav-tab > .link {
+                display: inline-block;
+                line-height: 20px;
+                font-size: 18px;
+                margin-left: 20px;
+                text-decoration: none;
+            }
+            .full-container > .content > .nav-tab > .non-button {
+                color: #EA1E63;
+                
+            }
+                .full-container > .content > .nav-tab > .non-button:hover {
+                    color: #555;
+                }
+        .full-container > .content > .menu-btn {
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: tomato;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            cursor: pointer;
+        }
+            .full-container > .content > .menu-btn:hover > .menu-line {
+                background-color: #888;
+            }
+        .full-container > .content > .menu-btn > .menu-line {
+            display: inline-block;
+            width: 30px;
+            height: 5px;
+            background-color: #555;
+            position: absolute;
+            left: 50%
+        }
+            .full-container > .content > .menu-btn > .menu-line:nth-child(1) {
+                top: 20%;
+                transform: translate(-50%, 0);
+            }
+            .full-container > .content > .menu-btn > .menu-line:nth-child(2) {
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .full-container > .content > .menu-btn > .menu-line:nth-child(3) {
+                bottom: 20%;
+                transform: translate(-50%, 0);
+            }
+                .full-container > .content > .change > .menu-line {
+                    top: 45%;
+                    left: 21%;
+                }
+                .full-container > .content > .change > .menu-line:nth-child(1) {
+                    /* top: 20%; */
+                    transform: rotate(45deg)
+                }
+                .full-container > .content > .change > .menu-line:nth-child(2) {
+                    display: none;
+                }
+                .full-container > .content > .change > .menu-line:nth-child(3) {
+                    /* top: 50%; */
+                    transform: rotate(-45deg)
+                }

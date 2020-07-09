@@ -112,6 +112,16 @@
                 display: inline-block;
                 width: 60px;
             }
+            .full-container > .content > .nav-tab {
+                display: none;
+            }
+            .full-container > .content > .menu-btn {
+                display: inline-block;
+            }
+                .full-container > .content > .menu-btn > .menu-line {
+                    display: inline-block;
+                }
+            
 }
 
 
