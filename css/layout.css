@@ -1,7 +1,7 @@
 .full-container {
     display: inline-block;
     width: 100%;
-    padding: 40px;
+    padding: 10px 40px;
 }
     .full-container > .content {
         display: inline-block;
@@ -110,15 +110,18 @@
         }
             .full-container > .content > .logo {
                 display: inline-block;
-                width: 60px;
+                width: 50px;
             }
             .full-container > .content > .nav-tab {
+                margin-top: 0;
+            }
+            .full-container > .content > .nav-tab > .link {
                 display: none;
             }
-            .full-container > .content > .menu-btn {
+            .full-container > .content > .nav-tab > .menu-btn {
                 display: inline-block;
             }
-                .full-container > .content > .menu-btn > .menu-line {
+                .full-container > .content > .nav-tab > .menu-btn > .menu-line {
                     display: inline-block;
                 }
             
