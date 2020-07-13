@@ -6,20 +6,32 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>Training website</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    
 </head>
 <body>
-    <header class="header">
-        <img src="./img/logo.png" alt="Logo" class="logo">
-        <nav class="nav-tab">
-            <a href="./index.html" class="link">Home</a>
-            <a href="./coming-soon.html" class="link">About us</a>
-            <a href="./404-error.html" class="link">Work</a>
-            <a href="#" class="link">Info</a>
-            <a href="./signin.html" class="link">Sign in</a>
-        </nav>
+    <header class="header 404header full-container bg-blue">
+        <div class="content">
+            <img class="logo" src="./img/logo.png" alt="Main logo">
+            <nav class="nav-tab">
+                <div class="menu-btn">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+                <a class="link non-button" href="./index.html">Home</a>
+                <a class="link non-button" href="./coming-soon.html">About us</a>
+                <a class="link non-button" href="./404-error.html">Work</a>
+                <a class="link non-button" href="#">Info</a>
+                <a class="link button head-button" href="./signin.html">Sign in</a>
+            </nav>
+        </div>
     </header>
     Hello world!
+    This is my training website.
+    Try pressing links.
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
