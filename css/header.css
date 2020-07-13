@@ -9,12 +9,16 @@
         .full-container > .content > .logo {
             display: inline-block;
             width: 80px;
+            float: left;
         }
         .full-container > .content > .nav-tab {
             display: inline-block;
-            position: absolute;
+            float: right;
+            margin-top: 20px;
+            max-width: calc(100% - 100px);
+            /* position: absolute;
             bottom: 0;
-            right: 0;
+            right: 0; */
         }
             .full-container > .content > .nav-tab > .link {
                 display: inline-block;
@@ -30,51 +34,90 @@
                 .full-container > .content > .nav-tab > .non-button:hover {
                     color: #555;
                 }
-        .full-container > .content > .menu-btn {
+        .full-container > .content > .nav-tab > .menu-btn {
             display: none;
             width: 50px;
             height: 50px;
             background-color: tomato;
             position: absolute;
-            bottom: 0;
+            top: 0;
             right: 0;
             cursor: pointer;
         }
-            .full-container > .content > .menu-btn:hover > .menu-line {
+            .full-container > .content > .nav-tab > .menu-btn:hover > .menu-line {
                 background-color: #888;
             }
-        .full-container > .content > .menu-btn > .menu-line {
+
+@media (max-width: 480px){
+        .full-container > .content > .nav-tab > .menu-btn > .menu-line {
             display: inline-block;
             width: 30px;
             height: 5px;
             background-color: #555;
             position: absolute;
-            left: 50%
+            left: 50%;
+            transform-origin: center;
+            transition: 0.5s;
         }
-            .full-container > .content > .menu-btn > .menu-line:nth-child(1) {
+            .full-container > .content > .nav-tab > .menu-btn > .menu-line:nth-child(1) {
                 top: 20%;
                 transform: translate(-50%, 0);
             }
-            .full-container > .content > .menu-btn > .menu-line:nth-child(2) {
+            .full-container > .content > .nav-tab > .menu-btn > .menu-line:nth-child(2) {
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
-            .full-container > .content > .menu-btn > .menu-line:nth-child(3) {
-                bottom: 20%;
-                transform: translate(-50%, 0);
+            .full-container > .content > .nav-tab > .menu-btn > .menu-line:nth-child(3) {
+                top: 80%;
+                transform: translate(-50%, -100%);
             }
-                .full-container > .content > .change > .menu-line {
-                    top: 45%;
-                    left: 21%;
-                }
-                .full-container > .content > .change > .menu-line:nth-child(1) {
-                    /* top: 20%; */
-                    transform: rotate(45deg)
-                }
-                .full-container > .content > .change > .menu-line:nth-child(2) {
-                    display: none;
-                }
-                .full-container > .content > .change > .menu-line:nth-child(3) {
-                    /* top: 50%; */
-                    transform: rotate(-45deg)
-                }
+        .full-container > .content > .nav-tab.visible-nav > .menu-btn {
+            background-color: #bbb;
+        }
+        .full-container > .content > .nav-tab.visible-nav > .menu-btn > .menu-line {
+            /* height: 3px; */
+            float: right;
+            
+        }
+            .full-container > .content > .nav-tab.visible-nav > .menu-btn > .menu-line:nth-child(1) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            .full-container > .content > .nav-tab.visible-nav > .menu-btn > .menu-line:nth-child(2) {
+                display: none;
+            }
+            .full-container > .content > .nav-tab.visible-nav > .menu-btn > .menu-line:nth-child(3) {
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        .full-container > .content > .nav-tab.visible-nav {
+            
+            display: inline-block;
+            width: 200px;
+            padding-top: 50px;
+            background-color: turquoise;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            /* margin-top: 50px; */
+        }
+        .full-container > .content > .nav-tab.visible-nav > .link {
+            display: inline-block;
+            float: right;
+            width: 100%;
+            padding: 5px;
+            line-height: 30px;
+            font-size: 20px;
+            text-decoration: none;
+            background-color: #bbb;
+            color: #EA1E63;
+            
+        }
+            .full-container > .content > .nav-tab.visible-nav > .link:hover {
+                color: white;
+                background-color: #EA1E63;
+            }
+
+}
+/* norint padaryti mouseover listener, reikia patikrinti, ar egzistuoja DOM'as */

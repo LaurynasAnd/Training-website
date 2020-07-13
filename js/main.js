@@ -1,4 +1,8 @@
-import clickMenuButton from './menuButton.js'
+import clickMenuButton from './menuButton.js';
 
-document.getElementsByClassName('menu-btn').addEventListener('click', clickMenuButton())
+
+const menu = document.querySelector('.menu-btn')
+menu.addEventListener('click', clickMenuButton);
+
+
 // clickMenuButton();
