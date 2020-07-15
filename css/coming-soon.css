@@ -3,33 +3,66 @@
     padding-bottom: 20px;
 }
 
-    .hero-content {
+    .full-container > .hero-content {
         text-align: center;
     }
-        .hero-content > .logo {
+        .full-container > .hero-content > .logo {
             margin-bottom: 40px;
             width: 40px;
         }
-        .hero-content > h1 {
+        .full-container > .hero-content > h1 {
             margin-bottom: 20px;
             line-height: 50px;
             font-size: 48px;
             text-transform: uppercase;
         }
-        .hero-content > p {
+        .full-container > .hero-content > p {
             margin-bottom: 60px;
             font-size: 20px;
             line-height: 25px;
             color: #555;
         }
-        .hero-content > .clock {
+        .full-container > .hero-content > .clock {
             margin-bottom: 60px;
         }
-        .hero-content > .form {
+        .full-container > .hero-content > .form {
             width: 90%;
             margin: 20px 5%;
 
         }
-        .hero-content > .mouse {
+        .full-container > .hero-content > .mouse {
             margin-bottom: 20px;
         }
+    .full-container > .content {}
+        .full-container > .content > .left-column {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        }
+        .full-container > .content > .right-column {
+            display: inline-block;
+            width: 40%;
+            float: right;
+        }
+        #main-content h2 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        #main-content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #555;
+        }
+
+@media (max-width: 768px) {
+    .full-container > .content > .left-column {
+        width: 100%;
+    }
+    .full-container > .content > .right-column {
+        width: 100%;
+        float: left;
+    }
+}
