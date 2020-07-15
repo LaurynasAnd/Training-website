@@ -1,3 +1,37 @@
-.bg-blue    {
-    background-color: skyblue;
+.content {
+    display: inline-block;
+    padding: 20px;
 }
+
+    .content > .description {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        padding: 10px;
+    }
+        .content > .description > .title {
+            display: inline-block;
+            margin: 10px 0;
+            line-height: 35px;
+            font-size: 31px;
+        }
+        .content > .description > .texts {
+            display: inline-block;
+            margin: 10px 0;
+            line-height: 25px;
+            font-size: 18px;
+        }
+        .content > .description > .button-404 {
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 25px;
+            line-height: 30px;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+    .content > .main-pic {
+        display: inline-block;
+        float: right;
+        width: 60%;
+    }
+

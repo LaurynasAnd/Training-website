@@ -1,9 +1,8 @@
 .full-container {
-    
+    display: inline-block;
 }
 
     .full-container > .content {
-        background-color: pink;
         position: relative;
     }
         .full-container > .content > .logo {
