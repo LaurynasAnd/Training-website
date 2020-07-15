@@ -1,9 +1,19 @@
+.bg-blue {
+    background-color: #27a5f8;
+}
 .full-container {
     display: inline-block;
     width: 100%;
-    padding: 10px 40px;
+    padding: 60px 0px;
 }
+    .full-container > .hero-content {     /*used only in coming soon page */
+        background-color: pink;
+        display: inline-block;
+        width: 900px;
+        margin: 0 calc(50% - 450px);
+    }
     .full-container > .content {
+        background-color: palevioletred;
         display: inline-block;
         width: 1100px;
         margin: 0 calc(50% - 550px);
@@ -13,6 +23,12 @@
 @media (max-width: 1200px)  {
     .container  {
         width: 800px;
+    }
+    /* above is used in sign pages */
+    
+    .full-container > .hero-content {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
     }
     .full-container > .content {
         width: 800px;
@@ -30,6 +46,12 @@
     }
     .container > .left > .s-footer > a:last-of-type{
         width: 100%;
+    }
+/* above is used in sign pages */
+    
+    .full-container > .hero-content {
+        width: 500px;
+        margin: 0 calc(50% - 250px);
     }
     .full-container > .content {
         width: 600px;
@@ -73,6 +95,9 @@
         width: 100%;
         z-index: 1;
     }
+    /* above is used in sign pages */
+    /* below is used in main pages */
+    .full-container > .hero-content,
     .full-container > .content {
         width: 480px;
         margin: 0 calc(50% - 240px);
@@ -101,9 +126,11 @@
         height: 2px;
 
     }
+    /* above is used in sign pages */
     .full-container {
         padding: 20px 0;
     }
+        .full-container > .hero-content,
         .full-container > .content {
             width: 100%;
             margin: 0;
