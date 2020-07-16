@@ -48,6 +48,9 @@
 #main-content {
 
 }
+    #main-content > .content > .left-column {
+        margin-bottom: 20px;
+    }
     #main-content h2 {
         font-size: 24px;
         line-height: 30px;
@@ -103,6 +106,7 @@
                 float: left;
                 padding: 0 10px;
                 position: relative;
+                font-size: 16px;
                 line-height: 28px;
                 color: rgba(255, 255, 255, 0.75);
             }
@@ -123,6 +127,7 @@
                 right: 0;
             }
         .content > .footer-bottom > p {
+            font-size: 16px;
             line-height: 28px;
             color: rgba(255, 255, 255, 0.75);
         }
@@ -131,22 +136,50 @@
             text-decoration: none;
         }
 
+@media (max-width: 960px) {
+    #main-content h2 {
+        font-size: 22px;
+    }
+    .full-container > .content > .left-column {
+        width: 45%;
+    }
+    .full-container > .content > .right-column {
+        width: 45%;
+    }
+}
 @media (max-width: 768px) {
     .full-container > .content > .left-column {
         width: 100%;
+        padding: 0 10px;
     }
     .full-container > .content > .right-column {
         width: 100%;
         float: left;
+        padding: 0 10px;
     }
     .content > .footer-bottom {
         width: 100%;
         margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
     .full-container > .hero-content > .clock > .time {
         width: 50%;
         padding: 0 5px;
+    }
+    #footer .credencials > p {
+        font-size: 12px;
+    }
+    .content > .footer-bottom > p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    #footer .credencials > p {
+        font-size: 10px;
+    }
+    .content > .footer-bottom > p {
+        font-size: 10px;
     }
 }
