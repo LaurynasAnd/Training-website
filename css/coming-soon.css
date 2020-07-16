@@ -1,5 +1,5 @@
 #hero {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-bottom: 20px;
 }
 
@@ -56,6 +56,58 @@
             line-height: 22px;
             color: #555;
         }
+#footer {
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+    .content > .icons {}
+    .content > .footer-bottom {
+        background-color: teal;
+        display: inline-block;
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+    }
+        .content > .footer-bottom > .main-logo {
+            margin-bottom: 40px;
+        }
+        .content > .footer-bottom > .credencials {
+            background-color: violet;
+            display: inline-block;
+        }
+            #footer .credencials > p {
+                background-color: gray;
+                display: inline-block;
+                float: left;
+                padding: 0 10px;
+                position: relative;
+                line-height: 28px;
+                color: #fffb;
+            }
+            #footer .credencials > p:nth-child(2)::before,
+            #footer .credencials > p:nth-child(2)::after{
+                content: '';
+                height: 18px;
+                width: 1px;
+                position: absolute;
+                background-color: #fffb;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+            #footer .credencials > p:nth-child(2)::before {
+                left: 0;
+            }
+            #footer .credencials > p:nth-child(2)::after{
+                right: 0;
+            }
+        .content > .footer-bottom > p {
+            line-height: 28px;
+            color: #fffb;
+        }
+        .content > .footer-bottom a {
+            color: #fff;
+            text-decoration: none;
+        }
 
 @media (max-width: 768px) {
     .full-container > .content > .left-column {
@@ -65,4 +117,7 @@
         width: 100%;
         float: left;
     }
+    .content > .footer-bottom {
+        width: 100%;
+        margin: 0;
 }
