@@ -8,8 +8,8 @@
 }
     .full-container > .hero-content {     /*used only in coming soon page */
         display: inline-block;
-        width: 900px;
-        margin: 0 calc(50% - 450px);
+        width: 600px;
+        margin: 0 calc(50% - 300px);
     }
     .full-container > .content {
         display: inline-block;
