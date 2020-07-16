@@ -60,29 +60,47 @@
     text-align: center;
     position: relative;
     color: #fff;
+    padding-top: 0;
 }
-    .content > .icons {}
+    .content > .social-icons {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    }
+    .content > .social-icons > .fa {
+        display: inline-block;
+        width: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        border-radius: 25px;
+    }
+
+    .content > .social-icons > .fa:hover {
+        color: #27a5f8;
+        background-color: #fff;
+    }
     .content > .footer-bottom {
-        background-color: teal;
         display: inline-block;
         width: 600px;
         margin: 0 calc(50% - 300px);
     }
         .content > .footer-bottom > .main-logo {
-            margin-bottom: 40px;
+            display: inline-block;
+            width: 200px;
+            margin-bottom: 30px;
         }
         .content > .footer-bottom > .credencials {
-            background-color: violet;
             display: inline-block;
         }
             #footer .credencials > p {
-                background-color: gray;
                 display: inline-block;
                 float: left;
                 padding: 0 10px;
                 position: relative;
                 line-height: 28px;
-                color: #fffb;
+                color: rgba(255, 255, 255, 0.75);
             }
             #footer .credencials > p:nth-child(2)::before,
             #footer .credencials > p:nth-child(2)::after{
@@ -90,7 +108,7 @@
                 height: 18px;
                 width: 1px;
                 position: absolute;
-                background-color: #fffb;
+                background-color: rgba(255, 255, 255, 0.75);
                 top: 50%;
                 transform: translate(0, -50%);
             }
@@ -102,9 +120,9 @@
             }
         .content > .footer-bottom > p {
             line-height: 28px;
-            color: #fffb;
+            color: rgba(255, 255, 255, 0.75);
         }
-        .content > .footer-bottom a {
+        .footer-content  a {
             color: #fff;
             text-decoration: none;
         }
