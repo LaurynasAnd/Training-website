@@ -1,0 +1,28 @@
+.clock {
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 100%;
+    color: #fff;
+}
+    .clock > .time {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+    .clock > .time > .value {
+        display: inline-block;
+        width: 100%;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .clock > .time > .label {
+        display: inline-block;
+        width: 100%;
+        line-height: 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
