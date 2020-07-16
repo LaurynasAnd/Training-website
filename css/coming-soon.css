@@ -89,71 +89,83 @@
     background-attachment: fixed;
     background-size: cover;
 }
-    .content > .social-icons {
-        display: inline-block;
-        width: 100%;
-        padding: 20px 0;
-        margin-bottom: 40px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+    .footer-content {
+        position: relative;
     }
-    .content > .social-icons > .fa {
-        display: inline-block;
-        width: 50px;
-        line-height: 50px;
-        font-size: 30px;
-        border-radius: 25px;
-    }
+        .content > .social-icons {
+            display: inline-block;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+        }
+        .content > .social-icons > .fa {
+            display: inline-block;
+            width: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            border-radius: 25px;
+        }
 
-    .content > .social-icons > .fa:hover {
-        color: #27a5f8;
-        background-color: #fff;
-    }
-    .content > .footer-bottom {
-        display: inline-block;
-        width: 600px;
-        margin: 0 calc(50% - 300px);
-    }
-        .content > .footer-bottom > .main-logo {
-            display: inline-block;
-            width: 200px;
-            margin-bottom: 30px;
+        .content > .social-icons > .fa:hover {
+            color: #27a5f8;
+            background-color: #fff;
         }
-        .content > .footer-bottom > .credencials {
+        .content > .footer-bottom {
             display: inline-block;
+            width: 600px;
+            margin: 0 calc(50% - 300px);
         }
-            #footer .credencials > p {
+            .content > .footer-bottom > .main-logo {
                 display: inline-block;
-                float: left;
-                padding: 0 10px;
-                position: relative;
+                width: 200px;
+                margin-bottom: 30px;
+            }
+            .content > .footer-bottom > .credencials {
+                display: inline-block;
+            }
+                #footer .credencials > p {
+                    display: inline-block;
+                    float: left;
+                    padding: 0 10px;
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: rgba(255, 255, 255, 0.75);
+                }
+                #footer .credencials > p:nth-child(2)::before,
+                #footer .credencials > p:nth-child(2)::after{
+                    content: '';
+                    height: 18px;
+                    width: 1px;
+                    position: absolute;
+                    background-color: rgba(255, 255, 255, 0.75);
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+                #footer .credencials > p:nth-child(2)::before {
+                    left: 0;
+                }
+                #footer .credencials > p:nth-child(2)::after{
+                    right: 0;
+                }
+            .content > .footer-bottom > p {
                 font-size: 16px;
                 line-height: 28px;
                 color: rgba(255, 255, 255, 0.75);
             }
-            #footer .credencials > p:nth-child(2)::before,
-            #footer .credencials > p:nth-child(2)::after{
-                content: '';
-                height: 18px;
-                width: 1px;
-                position: absolute;
-                background-color: rgba(255, 255, 255, 0.75);
-                top: 50%;
-                transform: translate(0, -50%);
-            }
-            #footer .credencials > p:nth-child(2)::before {
-                left: 0;
-            }
-            #footer .credencials > p:nth-child(2)::after{
-                right: 0;
-            }
-        .content > .footer-bottom > p {
-            font-size: 16px;
-            line-height: 28px;
-            color: rgba(255, 255, 255, 0.75);
-        }
         .footer-content  a {
             color: #fff;
             text-decoration: none;
+        }
+        .footer-content > .back-to-top {
+            width: 50px;
+            line-height: 30px;
+            font-size: 25px;
+            border-radius: 25px;
+            position: absolute;
+            top: -25px;
+            right: 0;
         }
 
 @media (max-width: 960px) {
@@ -182,11 +194,18 @@
         margin: 0;
     }
 }
-
+/* @media (max-width: 534px) {
+    .footer-content > .back-to-top {
+        right: -55px;
+    } */
+/* } */
 @media (max-width: 480px) {
     .full-container > .hero-content > .clock > .time {
         width: 50%;
         padding: 0 5px;
+    }
+    .full-container > .content > .right-column {
+        margin-bottom: 30px;
     }
     #footer .credencials > p {
         font-size: 12px;

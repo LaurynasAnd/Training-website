@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .bg-blue {
     background-color: #27a5f8;
 }
