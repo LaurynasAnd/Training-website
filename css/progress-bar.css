@@ -19,6 +19,9 @@
         .progress-bar > .top > .value {
             display: inline-block;
             float: right;
+            animation-name: loadValue;
+            animation-duration: 2s;
+            animation-direction: reverse;
         }
     .progress-bar > .bar {
         display: inline-block;
@@ -33,4 +36,15 @@
             height: 8px;
             background-color: #EA1E63;
             float: left;
+            
         }
+        .progress-bar > .bar > .animate-fill {
+            animation-name: loadFill;
+            animation-direction: reverse;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
+
+@keyframes loadFill {
+    100% {width: 0}
+}
