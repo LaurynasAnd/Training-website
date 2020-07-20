@@ -1,0 +1,50 @@
+.progress-bar {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+    .progress-bar:last-child {
+        margin-bottom: 0px;
+    }
+    .progress-bar > .top {
+        display: inline-block;
+        width: 100%;
+        color: #555;
+        margin-bottom: 10px;
+    }
+        .progress-bar > .top > .label {
+            display: inline-block;
+            float: left;
+        }
+        .progress-bar > .top > .value {
+            display: inline-block;
+            float: right;
+            animation-name: loadValue;
+            animation-duration: 2s;
+            animation-direction: reverse;
+        }
+    .progress-bar > .bar {
+        display: inline-block;
+        width: 100%;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: #888;
+    }
+        .progress-bar > .bar > .fill {
+            display: inline-block;
+            height: 8px;
+            background-color: #EA1E63;
+            float: left;
+            
+        }
+        .progress-bar > .bar > .animate-fill {
+            animation-name: loadFill;
+            animation-direction: reverse;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+        }
+
+@keyframes loadFill {
+    100% {width: 0}
+}
