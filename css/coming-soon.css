@@ -45,11 +45,7 @@
         .full-container > .hero-content > .form > .message-button{
             margin-top: 20px;
         }
-        .full-container > .hero-content > .mouse {
-            display: inline-block;
-            width: 20%;
-            margin-bottom: 20px;
-        }
+        
     .full-container > .content {}
         .full-container > .content > .left-column {
             display: inline-block;
